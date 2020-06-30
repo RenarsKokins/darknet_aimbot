@@ -1,0 +1,228 @@
+
+#from darkflow.net.build import TFNet
+import numpy as np
+import os
+import time
+import math
+import mss
+import keyboard
+import d3dshot
+from queue import Queue
+import threading
+from threading import Thread
+import pyautogui
+import sys
+from PyQt5 import QtCore, QtGui, QtWidgets
+from win32api import GetSystemMetrics
+pyautogui.FAILSAFE = False
+
+import cv2
+import darknet as dn
+
+#monitor = {"top": 56, "left": 336, "width": 608, "height": 608}
+#monitor = {"top": 0, "left": 0, "width": 1920, "height": 1080}
+monitor = {"top": 236, "left": 656, "width": 608, "height": 608}
+
+print('Native monitor size: ' + 'w: ' + str(GetSystemMetrics(0)) + ' h: ' + str(GetSystemMetrics(1)))
+
+q = Queue(maxsize=1)
+netMain = None
+metaMain = None
+altNames = None
+recoil = 0
+lastShot = 0
+toggle = False
+
+def get_frame():
+    while True:
+        with mss.mss() as sct:
+            vid = np.array(sct.grab(monitor))
+            q.put(vid)
+
+def convertBack(x, y, w, h):
+    xmin = int(round(x - (w / 2)))
+    xmax = int(round(x + (w / 2)))
+    ymin = int(round(y - (h / 2)))
+    ymax = int(round(y + (h / 2)))
+    return xmin, ymin, xmax, ymax
+
+def switchToggle(event=None):
+    global toggle
+    print('Toggled!')
+    if toggle == True:
+        toggle = False
+    elif toggle == False:
+        toggle = True
+
+keyboard.on_release_key('v', switchToggle)
+
+def cvDrawBoxes(detections, img):
+    for detection in detections:
+        if (detection[0].decode() == "person"):
+            x, y, w, h = detection[2][0],\
+                detection[2][1],\
+                detection[2][2],\
+                detection[2][3]
+            xmin, ymin, xmax, ymax = convertBack(
+                float(x), float(y), float(w), float(h))
+            pt1 = (xmin, ymin)
+            pt2 = (xmax, ymax)
+            cv2.rectangle(img, pt1, pt2, (0, 255, 0), 1)
+            cv2.putText(img,
+                        detection[0].decode() +
+                        " [" + str(round(detection[1] * 100, 2)) + "]",
+                        (pt1[0], pt1[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                        [0, 255, 0], 2)
+    return img
+
+
+def main():
+    t = Thread(target=get_frame)
+    t.start()
+    global metaMain, netMain, altNames, recoil, toggle, lastShot
+    
+
+    configPath = "./cfg/yolov3-tiny.cfg"
+    weightPath = "./yolov3-tiny.weights"
+    metaPath = "./cfg/coco.data"
+
+    if not os.path.exists(configPath):
+        raise ValueError("Invalid config path `" +
+                         os.path.abspath(configPath)+"`")
+    if not os.path.exists(weightPath):
+        raise ValueError("Invalid weight path `" +
+                         os.path.abspath(weightPath)+"`")
+    if not os.path.exists(metaPath):
+        raise ValueError("Invalid data file path `" +
+                         os.path.abspath(metaPath)+"`")
+
+    if netMain is None:
+        netMain = dn.load_net_custom(configPath.encode(
+            "ascii"), weightPath.encode("ascii"), 0, 1)  # batch size = 1
+        print('Loaded netMain!')
+    if metaMain is None:
+        metaMain = dn.load_meta(metaPath.encode("ascii"))
+        print('Loaded metaMain!')
+    if altNames is None:
+        try:
+            with open(metaPath) as metaFH:
+                metaContents = metaFH.read()
+                import re
+                match = re.search("names *= *(.*)$", metaContents,
+                                  re.IGNORECASE | re.MULTILINE)
+                if match:
+                    result = match.group(1)
+                else:
+                    result = None
+                try:
+                    if os.path.exists(result):
+                        with open(result) as namesFH:
+                            namesList = namesFH.read().strip().split("\n")
+                            altNames = [x.strip() for x in namesList]
+                except TypeError:
+                    pass
+        except Exception:
+            pass
+        print('Loaded altNames!')
+    
+    print('Passed initialization!')
+
+    darknet_image = dn.make_image(dn.network_width(netMain),
+                                    dn.network_height(netMain),3)
+
+    while True:
+        stime = time.time()
+        img = q.get()
+
+        if img is None:
+            print("Empty Frame")
+            continue
+        
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        img_in = cv2.resize(img,
+                                   (dn.network_width(netMain),
+                                    dn.network_height(netMain)),
+                                   interpolation=cv2.INTER_LINEAR)
+
+        cv2.rectangle(img_in, (280, 280), (416, 416), (0,0,0), thickness=-1)
+
+        dn.copy_image_from_bytes(darknet_image, img_in.tobytes())
+        detections = dn.detect_image(netMain, metaMain, darknet_image, thresh=0.3)
+
+        center = []
+        aim_height = [] 
+        closest = []
+        enemy_h = []
+        people_recognized = 0
+        
+        for detection in detections:
+            if(detection[0].decode() == "person"):
+                people_recognized = people_recognized + 1
+                
+                x, y, w, h =    detection[2][0],\
+                                detection[2][1],\
+                                detection[2][2],\
+                                detection[2][3]
+                
+                center.append(int(x))
+                if h > 25:
+                    aim_height.append(y - h/2 + h*0.1)
+                else:
+                    aim_height.append(y - h/2 - h*0.1)
+                closest.append(int(w+h))
+                enemy_h.append(int(h))
+
+        ###################### AIM AT CLOSEST ONE ########################
+        #keyboard.hook_key('v', switchToggle())
+        
+        #print(toggle)
+
+        if people_recognized >= 1:
+            if ((toggle == True) & (enemy_h[closest.index(max(closest))] > 25)):
+                aim_index = closest.index(max(closest))
+                aim_multiplier = (center[aim_index] - 208)*0.8
+
+                pyautogui.moveTo(center[aim_index] + aim_multiplier + ((GetSystemMetrics(0)-416)/2),
+                                    aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2) + recoil)
+                pyautogui.PAUSE = 0.0
+                pyautogui.click()
+                if recoil < enemy_h[aim_index]:
+                    recoil += 1
+                else:
+                    recoil = enemy_h[aim_index]
+                pyautogui.PAUSE = 0.0
+
+                pyautogui.PAUSE = 0.0
+
+            elif ((toggle == True) & (enemy_h[closest.index(max(closest))] < 25)):
+                aim_index = closest.index(max(closest))
+                aim_multiplier = (center[aim_index] - 208)*0.8
+
+                pyautogui.moveTo(center[aim_index] + aim_multiplier + ((GetSystemMetrics(0)-416)/2),
+                                    aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2))
+                
+                if time.time() - lastShot > 0.5:
+                    pyautogui.PAUSE = 0.0
+                    pyautogui.click()
+                    pyautogui.PAUSE = 0.0
+                    lastShot = time.time()
+        else:
+            recoil = 0    
+        
+        img_show = cv2.cvtColor(img_in, cv2.COLOR_BGR2RGB)
+        img_show = cvDrawBoxes(detections, img_show)
+        cv2.imshow('output', img_show)
+
+        #print('FPS {:.1f}'.format(1 / (time.time() - stime)))
+        
+        if cv2.waitKey(1) == ord('q'):
+            print("BREAK!")
+            break
+
+    cv2.destroyAllWindows()
+
+
+if __name__ == '__main__':
+     main()
+
+#input("Press Enter to exit...")

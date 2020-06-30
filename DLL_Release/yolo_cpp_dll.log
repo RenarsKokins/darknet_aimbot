@@ -1,0 +1,1184 @@
+﻿  Compiling CUDA source file ..\..\src\activation_kernels.cu...
+  Compiling CUDA source file ..\..\src\avgpool_layer_kernels.cu...
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\avgpool_layer_kernels.cu.obj "C:\Programming\Python\darknet\src\avgpool_layer_kernels.cu" 
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\activation_kernels.cu.obj "C:\Programming\Python\darknet\src\activation_kernels.cu" 
+  Compiling CUDA source file ..\..\src\blas_kernels.cu...
+  Compiling CUDA source file ..\..\src\col2im_kernels.cu...
+  Compiling CUDA source file ..\..\src\crop_layer_kernels.cu...
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\blas_kernels.cu.obj "C:\Programming\Python\darknet\src\blas_kernels.cu" 
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\col2im_kernels.cu.obj "C:\Programming\Python\darknet\src\col2im_kernels.cu" 
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\crop_layer_kernels.cu.obj "C:\Programming\Python\darknet\src\crop_layer_kernels.cu" 
+  Compiling CUDA source file ..\..\src\convolutional_kernels.cu...
+C:/Programming/Python/darknet/src/blas_kernels.cu(1038): warning : variable "out_index" was declared but never referenced
+C:/Programming/Python/darknet/src/blas_kernels.cu(1082): warning : variable "step" was set but never used
+C:/Programming/Python/darknet/src/blas_kernels.cu(1686): warning : variable "stage_id" was declared but never referenced
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\convolutional_kernels.cu.obj "C:\Programming\Python\darknet\src\convolutional_kernels.cu" 
+  avgpool_layer_kernels.cu
+  activation_kernels.cu
+C:/Programming/Python/darknet/src/blas_kernels.cu(1038): warning : variable "out_index" was declared but never referenced
+C:/Programming/Python/darknet/src/blas_kernels.cu(1082): warning : variable "step" was set but never used
+C:/Programming/Python/darknet/src/blas_kernels.cu(1686): warning : variable "stage_id" was declared but never referenced
+  col2im_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/avgpool_layer_kernels.cu(48): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/avgpool_layer_kernels.cu(56): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  crop_layer_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Compiling CUDA source file ..\..\src\deconvolutional_kernels.cu...
+  Compiling CUDA source file ..\..\src\dropout_layer_kernels.cu...
+  Compiling CUDA source file ..\..\src\im2col_kernels.cu...
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\deconvolutional_kernels.cu.obj "C:\Programming\Python\darknet\src\deconvolutional_kernels.cu" 
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/crop_layer_kernels.cu(185): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\dropout_layer_kernels.cu.obj "C:\Programming\Python\darknet\src\dropout_layer_kernels.cu" 
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\im2col_kernels.cu.obj "C:\Programming\Python\darknet\src\im2col_kernels.cu" 
+  Compiling CUDA source file ..\..\src\maxpool_layer_kernels.cu...
+  convolutional_kernels.cu
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\maxpool_layer_kernels.cu.obj "C:\Programming\Python\darknet\src\maxpool_layer_kernels.cu" 
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(120): warning : variable "cur_scale" was declared but never referenced
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(207): warning : variable "cur_scale" was declared but never referenced
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(114): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(137): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(149): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(288): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(296): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(353): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(367): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(422): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(674): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(985): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(985): warning C4244: 'initializing': conversion from 'int64_t' to 'const int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(993): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1004): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1040): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1041): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1042): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1043): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1217): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1219): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1241): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1242): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1243): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1283): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/convolutional_kernels.cu(1285): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Compiling CUDA source file ..\..\src\network_kernels.cu...
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(120): warning : variable "cur_scale" was declared but never referenced
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(207): warning : variable "cur_scale" was declared but never referenced
+  
+  C:\Programming\Python\darknet\build\darknet>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -IC:\opencv\build\include -IC:\opencv_3.0\opencv\build\include -I..\..\include -I..\..\3rdparty\stb\include -I..\..\3rdparty\pthreads\include -I"C:\Programming\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I\include -I\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DCUDNN_HALF -DCUDNN -DGPU -DLIB_EXPORTS -D_TIMESPEC_DEFINED -D_SCL_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\DLL_Release\vc140.pdb /FS /Zi  /MD " -o x64\DLL_Release\network_kernels.cu.obj "C:\Programming\Python\darknet\src\network_kernels.cu" 
+C:/Programming/Python/darknet/src/network_kernels.cu(357): warning : variable "l" was declared but never referenced
+C:/Programming/Python/darknet/src/network_kernels.cu(366): warning : variable "im" was set but never used
+  deconvolutional_kernels.cu
+  blas_kernels.cu
+  dropout_layer_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/deconvolutional_kernels.cu(42): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(357): warning : variable "l" was declared but never referenced
+C:/Programming/Python/darknet/src/network_kernels.cu(366): warning : variable "im" was set but never used
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(107): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(122): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(123): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(126): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(127): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(201): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(209): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(210): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(213): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/dropout_layer_kernels.cu(214): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+C:/Programming/Python/darknet/src/blas_kernels.cu(236): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1430): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1451): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1476): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1502): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1522): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(1540): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/blas_kernels.cu(2211): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  maxpool_layer_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(142): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(179): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(219): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(226): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(350): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/maxpool_layer_kernels.cu(359): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  network_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(97): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(201): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(203): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(248): warning C4474: 'printf' : too many arguments passed for format string
+  C:/Programming/Python/darknet/src/network_kernels.cu(248): note: placeholders and their parameters expect 4 variadic arguments, but 5 were provided
+C:/Programming/Python/darknet/src/network_kernels.cu(267): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(267): warning C4244: 'initializing': conversion from 'uint64_t' to 'const int', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(355): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:/Programming/Python/darknet/src/network_kernels.cu(552): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  im2col_kernels.cu
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3'
+C:/Programming/Python/darknet/src/im2col_kernels.cu(433): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/im2col_kernels.cu(473): warning C4244: 'return': conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:/Programming/Python/darknet/src/im2col_kernels.cu(541): warning C4244: 'return': conversion from 'unsigned long' to 'uint8_t', possible loss of data
+C:/Programming/Python/darknet/src/im2col_kernels.cu(937): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:/Programming/Python/darknet/src/im2col_kernels.cu(937): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+  activations.c
+  activation_layer.c
+  art.c
+  avgpool_layer.c
+  batchnorm_layer.c
+  blas.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\avgpool_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\avgpool_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\avgpool_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\batchnorm_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\batchnorm_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\batchnorm_layer.c)
+..\..\src\blas.c(103): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\blas.c(171): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\blas.c(255): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(278): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(271): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(292): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(313): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(399): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\blas.c(392): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(409): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(410): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\blas.c(420): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(431): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\blas.c(463): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\batchnorm_layer.c(112): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\batchnorm_layer.c(127): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\batchnorm_layer.c(137): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\batchnorm_layer.c(190): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(191): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(192): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(193): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(206): warning C4028: formal parameter 1 different from declaration
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\activations.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\activation_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\activations.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\activation_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\activations.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\activation_layer.c)
+  box.c
+..\..\src\batchnorm_layer.c(279): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(271): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  captcha.c
+..\..\src\activations.c(165): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\activations.c(193): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\activations.c(355): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+..\..\src\activations.c(356): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+..\..\src\batchnorm_layer.c(350): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\batchnorm_layer.c(362): warning C4305: 'function': truncation from 'double' to 'float'
+  cifar.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\art.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\art.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\art.c)
+  classifier.c
+  coco.c
+..\..\src\box.c(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(104): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(105): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(106): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(194): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(213): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(237): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(238): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(248): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(249): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(250): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(251): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(265): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(266): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(270): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(271): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(344): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(345): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(346): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(347): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(353): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\box.c(355): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(358): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\box.c(360): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(362): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\box.c(364): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(367): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\box.c(369): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(421): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(422): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(423): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(424): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(573): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(621): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(622): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(623): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(624): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(608): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(609): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(610): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(611): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(613): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(643): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(644): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(645): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(646): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(630): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(631): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(632): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(633): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(635): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(672): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(673): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(674): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(675): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(655): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(656): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(657): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(658): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\box.c(660): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\captcha.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\captcha.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\captcha.c)
+..\..\src\box.c(884): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(885): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(886): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(925): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(926): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(935): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\box.c(936): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\captcha.c(31): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\captcha.c(87): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\captcha.c(41): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\captcha.c(88): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 5 has type 'uint64_t'
+  ..\..\src\captcha.c(88): note: consider using '%lld' in the format string
+  ..\..\src\captcha.c(88): note: consider using '%Id' in the format string
+  ..\..\src\captcha.c(88): note: consider using '%I64d' in the format string
+  col2im.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\coco.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\classifier.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\classifier.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\classifier.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\coco.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\coco.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\cifar.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\cifar.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\cifar.c)
+..\..\src\coco.c(22): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\coco.c(86): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\cifar.c(9): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  compare.c
+..\..\src\cifar.c(31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\cifar.c(34): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\coco.c(32): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\cifar.c(24): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\cifar.c(32): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\cifar.c(32): note: consider using '%lld' in the format string
+  ..\..\src\cifar.c(32): note: consider using '%Id' in the format string
+  ..\..\src\cifar.c(32): note: consider using '%I64d' in the format string
+..\..\src\cifar.c(57): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\cifar.c(79): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\cifar.c(87): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\cifar.c(90): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\cifar.c(72): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\cifar.c(77): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\cifar.c(88): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\cifar.c(88): note: consider using '%lld' in the format string
+  ..\..\src\cifar.c(88): note: consider using '%Id' in the format string
+  ..\..\src\cifar.c(88): note: consider using '%I64d' in the format string
+..\..\src\cifar.c(118): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\coco.c(117): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\coco.c(118): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\coco.c(110): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\coco.c(111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\coco.c(112): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\coco.c(113): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\cifar.c(149): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\cifar.c(193): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\cifar.c(220): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\coco.c(145): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\coco.c(171): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\coco.c(246): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\coco.c(274): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\coco.c(343): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\coco.c(396): warning C4305: 'function': truncation from 'double' to 'float'
+  connected_layer.c
+  convolutional_layer.c
+  conv_lstm_layer.c
+  cost_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\compare.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\compare.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\compare.c)
+..\..\src\compare.c(12): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\compare.c(56): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\compare.c(65): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\compare.c(70): warning C4305: '*=': truncation from 'double' to 'float'
+..\..\src\compare.c(43): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\compare.c(57): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 5 has type 'uint64_t'
+  ..\..\src\compare.c(57): note: consider using '%lld' in the format string
+  ..\..\src\compare.c(57): note: consider using '%Id' in the format string
+  ..\..\src\compare.c(57): note: consider using '%I64d' in the format string
+..\..\src\compare.c(88): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\compare.c(196): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\compare.c(197): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\compare.c(198): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\compare.c(199): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\compare.c(234): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\compare.c(266): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  cpu_gemm.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\connected_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\connected_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\connected_layer.c)
+..\..\src\classifier.c(25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\classifier.c(40): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(57): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(163): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\classifier.c(168): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+..\..\src\classifier.c(169): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\cost_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\cost_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\cost_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\conv_lstm_layer.c)
+..\..\src\classifier.c(195): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\classifier.c(195): note: consider using '%lld' in the format string
+  ..\..\src\classifier.c(195): note: consider using '%Id' in the format string
+  ..\..\src\classifier.c(195): note: consider using '%I64d' in the format string
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\conv_lstm_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\conv_lstm_layer.c)
+..\..\src\classifier.c(371): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(440): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(514): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(588): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\cost_layer.c(75): warning C4028: formal parameter 1 different from declaration
+..\..\src\classifier.c(661): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  crnn_layer.c
+..\..\src\classifier.c(754): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\classifier.c(755): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\cost_layer.c(133): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\classifier.c(831): warning C4101: 'time': unreferenced local variable
+..\..\src\classifier.c(887): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(925): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\classifier.c(1342): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\conv_lstm_layer.c(206): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\conv_lstm_layer.c(207): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\connected_layer.c(93): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\conv_lstm_layer.c(524): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\convolutional_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\convolutional_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\convolutional_layer.c)
+..\..\src\conv_lstm_layer.c(927): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\connected_layer.c(251): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\connected_layer.c(317): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\connected_layer.c(318): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\connected_layer.c(319): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+  crop_layer.c
+..\..\src\convolutional_layer.c(46): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(69): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  darknet.c
+  dark_cuda.c
+  data.c
+..\..\src\convolutional_layer.c(649): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(440): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(721): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(915): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(937): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(948): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(953): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1067): warning C4267: 'function': conversion from 'size_t' to 'const int', possible loss of data
+..\..\src\convolutional_layer.c(1074): warning C4028: formal parameter 1 different from declaration
+..\..\src\convolutional_layer.c(1146): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1161): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1164): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1207): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1306): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(1294): warning C4244: 'initializing': conversion from 'uint64_t' to 'const int', possible loss of data
+..\..\src\convolutional_layer.c(1302): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\convolutional_layer.c(1329): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1330): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1331): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\convolutional_layer.c(1332): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  deconvolutional_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\crnn_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\crnn_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\crnn_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\crop_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\crop_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\crop_layer.c)
+..\..\src\crop_layer.c(54): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\crop_layer.c(55): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\dark_cuda.c(107): warning C4244: 'function': conversion from 'std::size_t' to 'double', possible loss of data
+..\..\src\dark_cuda.c(107): warning C4244: '=': conversion from 'double' to 'std::size_t', possible loss of data
+..\..\src\dark_cuda.c(112): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\src\dark_cuda.c(113): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  demo.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\darknet.c)
+..\..\src\dark_cuda.c(267): warning C4028: formal parameter 1 different from declaration
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\darknet.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\darknet.c)
+..\..\src\dark_cuda.c(286): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'const std::size_t'
+  ..\..\src\dark_cuda.c(286): note: consider using '%zd' in the format string
+..\..\src\dark_cuda.c(307): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::size_t'
+  ..\..\src\dark_cuda.c(307): note: consider using '%zd' in the format string
+..\..\src\dark_cuda.c(322): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'const std::size_t'
+  ..\..\src\dark_cuda.c(322): note: consider using '%zd' in the format string
+..\..\src\dark_cuda.c(328): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'const std::size_t'
+  ..\..\src\dark_cuda.c(328): note: consider using '%zd' in the format string
+..\..\src\dark_cuda.c(418): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\dark_cuda.c(419): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\darknet.c(75): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(263): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(76): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(264): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(78): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(79): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(80): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(84): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\darknet.c(85): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(440): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(442): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(443): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(444): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  detection_layer.c
+..\..\src\darknet.c(490): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\darknet.c(519): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\data.c(673): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(674): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(675): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(676): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(695): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(670): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(671): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(673): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(674): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(675): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(676): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(792): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(793): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(794): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(795): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(813): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(789): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(790): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(792): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(793): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(794): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(795): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(923): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(924): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(925): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(926): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(893): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(894): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(895): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(896): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1279): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+..\..\src\data.c(1282): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(1283): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(1284): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(1285): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\data.c(1299): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  detector.c
+..\..\src\data.c(1300): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1307): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1308): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1329): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1329): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(1262): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1263): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1282): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1283): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1284): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1285): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\data.c(1354): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\data.c(1355): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\data.c(1356): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\data.c(1357): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\data.c(1595): warning C4244: 'function': conversion from 'const float' to 'int', possible loss of data
+..\..\src\data.c(1596): warning C4244: 'function': conversion from 'const float' to 'int', possible loss of data
+..\..\src\data.c(1638): warning C4244: 'function': conversion from 'const float' to 'int', possible loss of data
+..\..\src\data.c(1639): warning C4244: 'function': conversion from 'const float' to 'int', possible loss of data
+..\..\src\data.c(1593): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  dice.c
+..\..\src\data.c(1594): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\data.c(1637): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\data.c(1815): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(1819): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\data.c(1848): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(1849): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\data.c(1879): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\data.c(1886): warning C4305: 'function': truncation from 'double' to 'float'
+  dropout_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\deconvolutional_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\deconvolutional_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\deconvolutional_layer.c)
+..\..\src\deconvolutional_layer.c(65): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\deconvolutional_layer.c(158): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  gaussian_yolo_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\demo.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\demo.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\demo.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\detection_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\detection_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\detection_layer.c)
+..\..\src\detection_layer.c(44): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detection_layer.c(84): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(99): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(160): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(161): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(163): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(175): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(178): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(211): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(80): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\detection_layer.c(239): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(240): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(304): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detection_layer.c(305): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\dice.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\dice.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\dice.c)
+  gemm.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\detector.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\detector.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\detector.c)
+..\..\src\dice.c(9): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\dice.c(35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\dice.c(38): warning C4305: '*=': truncation from 'double' to 'float'
+..\..\src\dice.c(20): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\dice.c(36): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 5 has type 'uint64_t'
+  ..\..\src\dice.c(36): note: consider using '%lld' in the format string
+  ..\..\src\dice.c(36): note: consider using '%Id' in the format string
+  ..\..\src\dice.c(36): note: consider using '%I64d' in the format string
+..\..\src\dice.c(53): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(62): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(68): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(87): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(116): warning C4244: '=': conversion from 'int64_t' to 'int', possible loss of data
+..\..\src\detector.c(117): warning C4244: '=': conversion from 'int64_t' to 'int', possible loss of data
+..\..\src\detector.c(118): warning C4244: '=': conversion from 'int64_t' to 'int', possible loss of data
+..\..\src\detector.c(236): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\detector.c(278): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(284): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+..\..\src\detector.c(286): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  getopt.c
+..\..\src\detector.c(179): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\detector.c(183): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+..\..\src\detector.c(184): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+..\..\src\detector.c(187): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+..\..\src\detector.c(188): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+..\..\src\detector.c(280): warning C4244: 'initializing': conversion from 'int64_t' to 'const int', possible loss of data
+..\..\src\detector.c(434): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(435): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(427): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(428): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(429): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(430): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(459): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(460): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(452): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(453): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(454): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(455): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(480): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(481): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(473): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(474): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(475): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(476): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(509): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(510): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(502): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(503): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(504): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(505): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(571): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(572): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\detector.c(564): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(565): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(566): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(567): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(607): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(669): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\detector.c(670): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\detector.c(788): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(803): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\detector.c(805): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\detector.c(912): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\detector.c(1325): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\detector.c(932): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\detector.c(933): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\detector.c(1372): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\dropout_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\dropout_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\dropout_layer.c)
+..\..\src\detector.c(1538): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\dropout_layer.c(29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\gaussian_yolo_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gaussian_yolo_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gaussian_yolo_layer.c)
+..\..\src\gaussian_yolo_layer.c(87): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(139): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(140): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(196): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(197): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(294): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(295): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(185): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\gaussian_yolo_layer.c(186): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(217): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(218): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(221): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(222): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(225): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(226): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(229): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(230): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(232): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(233): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(234): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(235): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(248): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(249): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(250): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(251): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(253): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(254): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(255): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(256): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(375): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(385): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(384): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(499): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(527): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(528): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(533): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(534): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(537): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(538): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(674): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(465): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(510): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(556): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(589): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\gaussian_yolo_layer.c(652): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(671): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(676): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(725): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(726): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(812): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(813): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(837): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(841): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\gaussian_yolo_layer.c(884): warning C4028: formal parameter 1 different from declaration
+  gettimeofday.c
+  go.c
+  gru_layer.c
+  im2col.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\gemm.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gemm.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gemm.c)
+..\..\src\gemm.c(527): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+..\..\src\gemm.c(929): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(930): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(931): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(932): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(933): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(934): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(935): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(936): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+..\..\src\gemm.c(1057): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\gemm.c(1041): warning C4101: 'all256_last_zero': unreferenced local variable
+..\..\src\gemm.c(1046): warning C4101: 'all256_one': unreferenced local variable
+..\..\src\gemm.c(1044): warning C4101: 'idx256': unreferenced local variable
+..\..\src\gemm.c(1047): warning C4101: 'all256i_one': unreferenced local variable
+..\..\src\gemm.c(1145): warning C4244: 'return': conversion from 'unsigned __int64' to 'int', possible loss of data
+..\..\src\gemm.c(1645): warning C4101: 'all256_sing1': unreferenced local variable
+..\..\src\gemm.c(1780): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\go.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\go.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\go.c)
+..\..\src\go.c(118): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\go.c(144): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\go.c(147): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+  image.c
+..\..\src\go.c(137): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\go.c(145): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\go.c(145): note: consider using '%lld' in the format string
+  ..\..\src\go.c(145): note: consider using '%Id' in the format string
+  ..\..\src\go.c(145): note: consider using '%I64d' in the format string
+..\..\src\go.c(198): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\go.c(199): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\go.c(200): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\go.c(201): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\go.c(307): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\go.c(404): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\go.c(442): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\go.c(539): warning C4305: 'function': truncation from 'double' to 'float'
+  layer.c
+..\..\src\go.c(615): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\go.c(690): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\go.c(764): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\go.c(802): warning C4305: 'function': truncation from 'double' to 'float'
+  list.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\gru_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gru_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\gru_layer.c)
+  local_layer.c
+  lstm_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\layer.c)
+  matrix.c
+..\..\src\gettimeofday.c(39): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+  maxpool_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\local_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\local_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\local_layer.c)
+  network.c
+..\..\src\local_layer.c(57): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\local_layer.c(182): warning C4028: formal parameter 1 different from declaration
+  nightmare.c
+..\..\src\image.c(31): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(32): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\lstm_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\lstm_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\lstm_layer.c)
+..\..\src\image.c(119): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(136): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(186): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(237): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(238): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(239): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(240): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(410): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\image.c(425): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(431): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(350): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(376): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(377): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(378): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(379): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(462): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(496): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(459): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(479): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(480): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(481): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(482): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(562): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(566): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(784): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(795): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(814): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(815): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(820): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(821): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(833): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(834): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(839): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(840): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(886): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(1039): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\image.c(1042): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1044): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1045): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1095): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1119): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+..\..\src\image.c(1150): warning C4305: 'initializing': truncation from 'double' to 'float'
+  normalization_layer.c
+..\..\src\image.c(1166): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\image.c(1310): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1352): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1424): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\image.c(1425): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\image.c(1426): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\image.c(1427): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\image.c(1493): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\image.c(1679): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  option_list.c
+  parser.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\network.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\network.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\network.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\maxpool_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\maxpool_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\maxpool_layer.c)
+..\..\src\network.c(67): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\network.c(115): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+..\..\src\network.c(120): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+..\..\src\network.c(136): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(141): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(151): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(153): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\maxpool_layer.c(145): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(157): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(159): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(171): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\nightmare.c)
+..\..\src\network.c(850): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\network.c(878): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\network.c(879): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\nightmare.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\nightmare.c)
+..\..\src\nightmare.c(14): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(1020): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(1021): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  region_layer.c
+..\..\src\network.c(1096): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\network.c(1118): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(1125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\network.c(1123): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\network.c(1163): warning C4305: 'initializing': truncation from 'double' to 'const float'
+..\..\src\nightmare.c(180): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\nightmare.c(197): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\nightmare.c(200): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\nightmare.c(201): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\nightmare.c(216): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\nightmare.c(217): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\nightmare.c(219): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+..\..\src\nightmare.c(245): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\nightmare.c(272): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\nightmare.c(297): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+..\..\src\nightmare.c(297): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+  reorg_layer.c
+  reorg_old_layer.c
+..\..\src\option_list.c(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\option_list.c(149): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\normalization_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\normalization_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\normalization_layer.c)
+  rnn.c
+  rnn_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\parser.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\parser.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\parser.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\region_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\region_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\region_layer.c)
+..\..\src\parser.c(187): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\parser.c(346): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(49): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\parser.c(355): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(384): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\parser.c(429): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(439): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(452): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(459): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(472): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(524): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(543): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(555): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(562): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(591): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(613): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(620): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(645): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(779): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(782): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\parser.c(804): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(844): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\region_layer.c(86): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(87): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(967): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\region_layer.c(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(90): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1040): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1041): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1044): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1045): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1062): warning C4244: '=': conversion from 'float' to 'std::size_t', possible loss of data
+..\..\src\region_layer.c(105): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1066): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\region_layer.c(106): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1067): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1068): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\parser.c(1088): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(102): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1137): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(103): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1142): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(166): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\parser.c(1125): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\region_layer.c(171): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+..\..\src\region_layer.c(267): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(286): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(287): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(294): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\region_layer.c(312): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(313): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(363): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(231): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(262): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\region_layer.c(301): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\parser.c(1809): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(1813): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(1815): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(1817): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(1835): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\parser.c(1857): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\region_layer.c(494): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(495): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\region_layer.c(533): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\reorg_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\reorg_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\reorg_layer.c)
+  rnn_vid.c
+  route_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\reorg_old_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\rnn.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\reorg_old_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\reorg_old_layer.c)
+  sam_layer.c
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn.c)
+..\..\src\rnn.c(127): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\rnn.c(190): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\rnn_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn_layer.c)
+..\..\src\rnn.c(162): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\rnn.c(165): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 5 has type 'std::size_t'
+  ..\..\src\rnn.c(165): note: consider using '%zd' in the format string
+  scale_channels_layer.c
+..\..\src\rnn.c(249): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\rnn.c(379): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\rnn.c(347): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\rnn.c(358): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\rnn.c(420): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\rnn.c(399): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\rnn.c(410): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\rnn.c(438): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\rnn.c(451): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\rnn.c(484): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\rnn.c(485): warning C4244: 'function': conversion from 'time_t' to 'int', possible loss of data
+  shortcut_layer.c
+  softmax_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\rnn_vid.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn_vid.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\rnn_vid.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\route_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\route_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\route_layer.c)
+  super.c
+  swag.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\scale_channels_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\scale_channels_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\scale_channels_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\sam_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\sam_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\sam_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\shortcut_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\shortcut_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\shortcut_layer.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\softmax_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\softmax_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\softmax_layer.c)
+..\..\src\shortcut_layer.c(88): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  tag.c
+  tree.c
+..\..\src\shortcut_layer.c(55): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\shortcut_layer.c(253): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+  upsample_layer.c
+  utils.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\swag.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\swag.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\swag.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\super.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\super.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\super.c)
+..\..\src\swag.c(12): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\swag.c(62): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\super.c(11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\super.c(54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\super.c(21): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\swag.c(22): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+  voxel.c
+  writing.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\tag.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\tag.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\tag.c)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\upsample_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\upsample_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\upsample_layer.c)
+..\..\src\tag.c(7): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\tag.c(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\tag.c(69): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+  yolo.c
+..\..\src\tag.c(54): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\tag.c(66): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\tag.c(66): note: consider using '%lld' in the format string
+  ..\..\src\tag.c(66): note: consider using '%Id' in the format string
+  ..\..\src\tag.c(66): note: consider using '%I64d' in the format string
+  yolo_layer.c
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\voxel.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\voxel.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\voxel.c)
+..\..\src\voxel.c(46): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\voxel.c(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\voxel.c(56): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\writing.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\writing.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\writing.c)
+..\..\src\writing.c(8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\writing.c(67): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\writing.c(76): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\writing.c(39): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\writing.c(68): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 7 has type 'uint64_t'
+  ..\..\src\writing.c(68): note: consider using '%lld' in the format string
+  ..\..\src\writing.c(68): note: consider using '%Id' in the format string
+  ..\..\src\writing.c(68): note: consider using '%I64d' in the format string
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\yolo.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\yolo.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\yolo.c)
+..\..\src\yolo.c(15): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\yolo.c(71): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo.c(25): warning C4244: 'initializing': conversion from 'uint64_t' to 'int', possible loss of data
+..\..\src\yolo.c(97): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\yolo.c(98): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\yolo.c(90): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo.c(91): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo.c(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo.c(93): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo.c(115): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\yolo.c(141): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\yolo.c(215): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\yolo.c(234): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\yolo_layer.c)
+c:\programming\python\darknet\src\activations.h(109): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\yolo_layer.c)
+c:\programming\python\darknet\src\activations.h(110): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data (compiling source file ..\..\src\yolo_layer.c)
+..\..\src\yolo_layer.c(76): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+..\..\src\yolo.c(298): warning C4305: 'initializing': truncation from 'double' to 'float'
+..\..\src\yolo.c(349): warning C4305: 'function': truncation from 'double' to 'float'
+..\..\src\yolo_layer.c(129): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(130): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(202): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(203): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(171): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(172): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(264): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(297): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(296): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\yolo_layer.c(411): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(448): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(449): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(592): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(376): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(422): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(442): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(465): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(512): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+..\..\src\yolo_layer.c(584): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(586): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(662): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(663): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(650): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\yolo_layer.c(652): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+..\..\src\yolo_layer.c(754): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(808): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_layer.c(843): warning C4028: formal parameter 1 different from declaration
+..\..\src\utils.c(143): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(248): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+..\..\src\utils.c(249): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\utils.c(420): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\utils.c(434): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\utils.c(464): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\src\utils.c(475): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\src\utils.c(486): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\src\utils.c(496): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+..\..\src\utils.c(552): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(553): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(554): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(625): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(626): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(634): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(646): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(641): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(664): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(677): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(691): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(704): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(783): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(793): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(840): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(893): warning C4013: 'rand_s' undefined; assuming extern returning int
+..\..\src\utils.c(1010): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(1011): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(1012): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(1013): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\utils.c(1017): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+..\..\src\utils.c(1019): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  http_stream.cpp
+  image_opencv.cpp
+  yolo_v2_class.cpp
+C:\Programming\Python\darknet\include\yolo_v2_class.hpp(76): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file ..\..\src\yolo_v2_class.cpp)
+C:\Programming\Python\darknet\include\yolo_v2_class.hpp(104): warning C4244: '*=': conversion from 'float' to 'unsigned int', possible loss of data (compiling source file ..\..\src\yolo_v2_class.cpp)
+c:\programming\python\darknet\src\dark_cuda.h(78): warning C4190: 'cuda_gridsize' has C-linkage specified, but returns UDT 'dim3' which is incompatible with C (compiling source file ..\..\src\yolo_v2_class.cpp)
+  c:\program files\nvidia gpu computing toolkit\cuda\v10.0\include\vector_types.h(426): note: see declaration of 'dim3' (compiling source file ..\..\src\yolo_v2_class.cpp)
+c:\programming\python\darknet\src\activations.h(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file ..\..\src\yolo_v2_class.cpp)
+..\..\src\yolo_v2_class.cpp(41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\yolo_v2_class.cpp(239): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+..\..\src\yolo_v2_class.cpp(329): warning C4244: '=': conversion from 'const double' to 'unsigned int', possible loss of data
+..\..\src\yolo_v2_class.cpp(330): warning C4244: '=': conversion from 'const double' to 'unsigned int', possible loss of data
+..\..\src\yolo_v2_class.cpp(331): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+..\..\src\yolo_v2_class.cpp(332): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+..\..\src\yolo_v2_class.cpp(384): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+..\..\src\yolo_v2_class.cpp(385): warning C4018: '<': signed/unsigned mismatch
+..\..\src\yolo_v2_class.cpp(387): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\http_stream.cpp(108): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+..\..\src\http_stream.cpp(200): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(234): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(245): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(246): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(247): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(259): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(260): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+..\..\src\http_stream.cpp(653): warning C4244: 'return': conversion from '__int64' to 'double', possible loss of data
+     Creating library C:\Programming\Python\darknet\build\darknet\x64\yolo_cpp_dll.lib and object C:\Programming\Python\darknet\build\darknet\x64\yolo_cpp_dll.exp
+  Generating code
+c:\programming\python\darknet\src\image.c(1311): warning C4716: 'quantize_image': must return a value
+c:\programming\python\darknet\src\gemm.c(797): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+c:\programming\python\darknet\src\gemm.c(1198): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+c:\programming\python\darknet\src\gemm.c(1884): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+c:\programming\python\darknet\src\gemm.c(721): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+  All 1426 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  yolo_cpp_dll.vcxproj -> C:\Programming\Python\darknet\build\darknet\x64\yolo_cpp_dll.dll
+  yolo_cpp_dll.vcxproj -> C:\Programming\Python\darknet\build\darknet\x64\yolo_cpp_dll.pdb (Full PDB)
