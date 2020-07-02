@@ -32,6 +32,9 @@ altNames = None
 recoil = 0
 lastShot = 0
 toggle = False
+recoil_on = True
+l_c = 0     #right compensation
+r_c = 0     #left compensation
 
 def get_frame():
     while True:
@@ -48,13 +51,22 @@ def convertBack(x, y, w, h):
 
 def switchToggle(event=None):
     global toggle
-    print('Toggled!')
     if toggle == True:
         toggle = False
     elif toggle == False:
         toggle = True
+    print('Toggled aim: ' + str(toggle))
 
-keyboard.on_release_key('v', switchToggle)
+def switchRecoil(event=None):
+    global recoil_on
+    if recoil_on == True:
+        recoil_on = False
+    elif recoil_on == False:
+        recoil_on = True
+    print('Toggled recoil: ' + str(recoil_on))
+
+keyboard.on_release_key('c', switchToggle)
+keyboard.on_release_key('v', switchRecoil)
 
 def cvDrawBoxes(detections, img):
     for detection in detections:
@@ -79,7 +91,7 @@ def cvDrawBoxes(detections, img):
 def main():
     t = Thread(target=get_frame)
     t.start()
-    global metaMain, netMain, altNames, recoil, toggle, lastShot
+    global metaMain, netMain, altNames, recoil, recoil_on, toggle, lastShot, l_c, r_c
     
 
     configPath = "./cfg/yolov3-tiny.cfg"
@@ -130,6 +142,8 @@ def main():
     darknet_image = dn.make_image(dn.network_width(netMain),
                                     dn.network_height(netMain),3)
 
+    once_every = 0
+
     while True:
         stime = time.time()
         img = q.get()
@@ -153,6 +167,7 @@ def main():
         aim_height = [] 
         closest = []
         enemy_h = []
+        enemy_w = []
         people_recognized = 0
         
         for detection in detections:
@@ -166,46 +181,70 @@ def main():
                 
                 center.append(int(x))
                 if h > 25:
-                    aim_height.append(y - h/2 + h*0.1)
+                    aim_height.append(y - h/2.8)
+                    #print('is more')
                 else:
-                    aim_height.append(y - h/2 - h*0.1)
-                closest.append(int(w+h))
+                    aim_height.append(y - h/1.4)
+                    #print('isnt more')
+                #closest.append(int(w+h))
+                closest.append(int(x))
                 enemy_h.append(int(h))
+                enemy_w.append(int(w))
 
         ###################### AIM AT CLOSEST ONE ########################
-        #keyboard.hook_key('v', switchToggle())
-        
-        #print(toggle)
 
         if people_recognized >= 1:
-            if ((toggle == True) & (enemy_h[closest.index(max(closest))] > 25)):
-                aim_index = closest.index(max(closest))
-                aim_multiplier = (center[aim_index] - 208)*0.8
+            aim_index = closest.index(min(closest))
+            aim_multiplier = (center[aim_index] - 208)*0.523
 
-                pyautogui.moveTo(center[aim_index] + aim_multiplier + ((GetSystemMetrics(0)-416)/2),
+            aim_compensation = 0
+            if (center[aim_index] - 208) > (enemy_w[aim_index]/20):
+                #right
+                r_c += 1
+                l_c = 0
+            elif (center[aim_index] - 208) < -(enemy_w[aim_index]/20):
+                #left
+                l_c += 1
+                r_c = 0
+            else:
+                l_c = 0
+                r_c = 0
+
+            if l_c > 4:
+                aim_compensation = int(-enemy_w[aim_index]/3)
+                #print('compensated left')
+            elif r_c > 4:
+                aim_compensation = int(enemy_w[aim_index]/3)
+                #print('compensated right')
+
+            if ((toggle == True) & (enemy_h[aim_index] > 25) & (recoil_on == True)):
+                pyautogui.moveTo(center[aim_index] + aim_multiplier + aim_compensation + ((GetSystemMetrics(0)-416)/2),
                                     aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2) + recoil)
-                pyautogui.PAUSE = 0.0
-                pyautogui.click()
+                if abs(center[aim_index] - 208) < 5:
+                    pyautogui.click()
+
                 if recoil < enemy_h[aim_index]:
                     recoil += 1
                 else:
                     recoil = enemy_h[aim_index]
                 pyautogui.PAUSE = 0.0
 
+            elif ((toggle == True) & (enemy_h[aim_index] > 25) & (recoil_on == False)):
+                pyautogui.moveTo(center[aim_index] + aim_multiplier + aim_compensation + ((GetSystemMetrics(0)-416)/2),
+                                    aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2))
+                if abs(center[aim_index] - 208) < 5:
+                    pyautogui.click()
                 pyautogui.PAUSE = 0.0
 
-            elif ((toggle == True) & (enemy_h[closest.index(max(closest))] < 25)):
-                aim_index = closest.index(max(closest))
-                aim_multiplier = (center[aim_index] - 208)*0.8
-
+            elif ((toggle == True) & (enemy_h[aim_index] < 25)):
                 pyautogui.moveTo(center[aim_index] + aim_multiplier + ((GetSystemMetrics(0)-416)/2),
                                     aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2))
-                
-                if time.time() - lastShot > 0.5:
-                    pyautogui.PAUSE = 0.0
-                    pyautogui.click()
-                    pyautogui.PAUSE = 0.0
-                    lastShot = time.time()
+
+                if abs(center[aim_index] - 208) < 5:
+                    if time.time() - lastShot > 0.5:
+                        pyautogui.click()
+                        pyautogui.PAUSE = 0.0
+                        lastShot = time.time()
         else:
             recoil = 0    
         
@@ -213,13 +252,22 @@ def main():
         img_show = cvDrawBoxes(detections, img_show)
         cv2.imshow('output', img_show)
 
-        #print('FPS {:.1f}'.format(1 / (time.time() - stime)))
+        
         
         if cv2.waitKey(1) == ord('q'):
             print("BREAK!")
+            cv2.destroyAllWindows()
+            sys.exit()
             break
 
-    cv2.destroyAllWindows()
+        #time.sleep(max(1./60 - (time.time() - stime), 0))
+
+        once_every += 1
+        if once_every > 60:
+            print('FPS {:.1f}'.format(1 / (time.time() - stime)))
+            once_every = 0
+
+    sys.exit()
 
 
 if __name__ == '__main__':
