@@ -91,11 +91,12 @@ def cvDrawBoxes(detections, img):
 def main():
     t = Thread(target=get_frame)
     t.start()
+
     global metaMain, netMain, altNames, recoil, recoil_on, toggle, lastShot, l_c, r_c
     
 
-    configPath = "./cfg/yolov3-tiny.cfg"
-    weightPath = "./yolov3-tiny.weights"
+    configPath = "./cfg/yolov4-tiny.cfg"
+    weightPath = "./yolov4-tiny.weights"
     metaPath = "./cfg/coco.data"
 
     if not os.path.exists(configPath):
@@ -138,12 +139,12 @@ def main():
         print('Loaded altNames!')
     
     print('Passed initialization!')
+    print('Network size x: ' + str(dn.network_width(netMain)) + ' y: ' + str(dn.network_height(netMain)))
 
     darknet_image = dn.make_image(dn.network_width(netMain),
                                     dn.network_height(netMain),3)
 
     once_every = 0
-
     while True:
         stime = time.time()
         img = q.get()
@@ -158,10 +159,10 @@ def main():
                                     dn.network_height(netMain)),
                                    interpolation=cv2.INTER_LINEAR)
 
-        cv2.rectangle(img_in, (280, 280), (416, 416), (0,0,0), thickness=-1)
+        cv2.rectangle(img_in, (280, 280), (dn.network_width(netMain), dn.network_height(netMain)), (0,0,0), thickness=-1)
 
         dn.copy_image_from_bytes(darknet_image, img_in.tobytes())
-        detections = dn.detect_image(netMain, metaMain, darknet_image, thresh=0.3)
+        detections = dn.detect_image(netMain, metaMain, darknet_image, thresh=0.38, hier_thresh=.5, nms=.55)
 
         center = []
         aim_height = [] 
@@ -172,20 +173,23 @@ def main():
         
         for detection in detections:
             if(detection[0].decode() == "person"):
-                people_recognized = people_recognized + 1
-                
                 x, y, w, h =    detection[2][0],\
                                 detection[2][1],\
                                 detection[2][2],\
                                 detection[2][3]
-                
+
+                if w > h:
+                    break
+
+                people_recognized = people_recognized + 1
                 center.append(int(x))
-                if h > 25:
-                    aim_height.append(y - h/2.8)
+                if h > 35:
+                    aim_height.append(y - h/2.5)
                     #print('is more')
                 else:
-                    aim_height.append(y - h/1.4)
+                    aim_height.append(y - h/2.65)
                     #print('isnt more')
+
                 #closest.append(int(w+h))
                 closest.append(int(x))
                 enemy_h.append(int(h))
@@ -211,40 +215,41 @@ def main():
                 r_c = 0
 
             if l_c > 4:
-                aim_compensation = int(-enemy_w[aim_index]/3)
+                aim_compensation = int(-enemy_w[aim_index]/2)
                 #print('compensated left')
             elif r_c > 4:
-                aim_compensation = int(enemy_w[aim_index]/3)
+                aim_compensation = int(enemy_w[aim_index]/2)
                 #print('compensated right')
 
-            if ((toggle == True) & (enemy_h[aim_index] > 25) & (recoil_on == True)):
+            if ((toggle == True) & (enemy_h[aim_index] > 50) & (recoil_on == True)):
                 pyautogui.moveTo(center[aim_index] + aim_multiplier + aim_compensation + ((GetSystemMetrics(0)-416)/2),
                                     aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2) + recoil)
                 if abs(center[aim_index] - 208) < 5:
                     pyautogui.click()
-
-                if recoil < enemy_h[aim_index]:
-                    recoil += 1
-                else:
-                    recoil = enemy_h[aim_index]
+                    if recoil < enemy_h[aim_index]:
+                        recoil += 1
+                    else:
+                        recoil = enemy_h[aim_index]
                 pyautogui.PAUSE = 0.0
 
-            elif ((toggle == True) & (enemy_h[aim_index] > 25) & (recoil_on == False)):
+            elif ((toggle == True) & (enemy_h[aim_index] > 50) & (recoil_on == False)):
                 pyautogui.moveTo(center[aim_index] + aim_multiplier + aim_compensation + ((GetSystemMetrics(0)-416)/2),
                                     aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2))
                 if abs(center[aim_index] - 208) < 5:
                     pyautogui.click()
                 pyautogui.PAUSE = 0.0
+                recoil = 0
 
-            elif ((toggle == True) & (enemy_h[aim_index] < 25)):
-                pyautogui.moveTo(center[aim_index] + aim_multiplier + ((GetSystemMetrics(0)-416)/2),
+            elif ((toggle == True) & (enemy_h[aim_index] < 50)):
+                pyautogui.moveTo(center[aim_index] + aim_multiplier + aim_compensation + ((GetSystemMetrics(0)-416)/2),
                                     aim_height[aim_index] + ((GetSystemMetrics(1)-416)/2))
 
-                if abs(center[aim_index] - 208) < 5:
+                if abs(center[aim_index] - 208) < 10:
                     if time.time() - lastShot > 0.5:
                         pyautogui.click()
                         pyautogui.PAUSE = 0.0
                         lastShot = time.time()
+                recoil = 0
         else:
             recoil = 0    
         
