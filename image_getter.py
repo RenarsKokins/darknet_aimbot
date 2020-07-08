@@ -25,12 +25,15 @@ def get_screenshot(event=None):
         print("Empty Frame")
     else:
         print('is good')
-
-    img_end = cv2.resize(img, (416, 416), interpolation=cv2.INTER_LINEAR)
-
-    img_name = str(random.randint(0, 1000000))
-    cv2.imwrite('training images/' + img_name + '.jpg', img_end)
-    print('saved: ' + img_name)
+        
+        img_name = str(random.randint(0, 1000000))
+        
+        cv2.imwrite('training images/real_scale/' + img_name + '.jpg', img)
+        
+        img_end = cv2.resize(img, (480, 480), interpolation=cv2.INTER_LINEAR)
+        cv2.imwrite('training images/' + img_name + '.jpg', img_end)
+        
+        print('saved: ' + img_name)
 
 keyboard.on_release_key('v', get_screenshot)
 

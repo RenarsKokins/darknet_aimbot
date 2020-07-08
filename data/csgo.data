@@ -1,4 +1,4 @@
-classes = 2
+classes = 4
 train  = data/train.txt
 valid  = data/test.txt
 names = data/csgo.names
